@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <title>e-Tasks</title>
+</head>
+
+<body>
+    <div id="root">
+        <header class="header">
+            <div class="wrapper">
+                <h1>e-Tasks</h1>
+                <p class="subtitle">
+                    Transforme suas listas em conquistas: organize, priorize e realize!
+                </p>
+            </div>
+        </header>
+        <main class="container">
+            <section class="form-container">
+
+                <input type="text" id="task" placeholder="Adicione uma nova tarefa" />
+
+                <button id="button_create">Cadastrar</button>
+                
+            </section>
+
+            <section class="section-task-list">
+
+                <header class="section-task-header">
+
+                    <div class="info">
+                        <strong>Tarefas criadas</strong>
+                        <span class="count-tasks">2</span>
+                    </div>
+                    <div class="info">
+                        <strong>Concluídas</strong>
+                        <span class="count-finisheds">2</span>
+                    </div>
+                </header>
+
+                <div class="empty-state" style="display: none;"></div>
+
+                <ul class="task-list"></ul>
+                <li class="task-item">
+                    <input id="task1" type="checkbox" checked />
+                    <P>KAKAROTO</P>
+                </li>
+                <li class="task-item">
+                    <input id="task2" type="checkbox" checked />
+                    <P>Vegeta olha bem ooooooooo!!!!!!!</P>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js/aula.js"></script>
+
+</body>
+
+</html>
